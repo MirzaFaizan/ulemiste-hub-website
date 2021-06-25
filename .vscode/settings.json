@@ -1,0 +1,16 @@
+{
+    "prettier.configPath": ".prettierrc",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "thunder-client.loadFromProject": true,
+    "thunder-client.enableSaveOption": true,
+    "workbench.colorTheme": "Cobalt3",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 3,
+    "editor.renderWhitespace": "all",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
+}

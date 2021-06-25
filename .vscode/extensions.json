@@ -1,0 +1,29 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",       
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "oderwat.indent-rainbow",
+        "2gua.rainbow-brackets",
+        "aaron-bond.better-comments",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "christian-kohler.npm-intellisense",
+        "visualstudioexptteam.vscodeintellicode",
+        "wix.vscode-import-cost",
+        "prisma.prisma",
+        "rangav.vscode-thunder-client",
+        "sleistner.vscode-fileutils",
+        "patbenatar.advanced-new-file",
+        "bradlc.vscode-tailwindcss",
+        "wallabyjs.quokka-vscode",
+        "pnp.polacode",
+        "bourhaouta.tailwindshades",
+        "alex-pattison.theme-cobalt3",
+        "ms-vsliveshare.vsliveshare",
+        "shd101wyy.markdown-preview-enhanced",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}
