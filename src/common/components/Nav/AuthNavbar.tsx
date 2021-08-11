@@ -32,12 +32,10 @@ const NavBar = (): ReactElement => {
                         id="example-navbar-warning">
                         <ul className="flex flex-col lg:flex-row list-none mr-auto">
                             <li className="flex items-center">
-                                <a
-                                    className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                    href="#">
+                                <span className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
                                     <i className="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />
-                                    Blog/News
-                                </a>
+                                    <Link href="/blog">Blog/News</Link>
+                                </span>
                             </li>
                         </ul>
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
