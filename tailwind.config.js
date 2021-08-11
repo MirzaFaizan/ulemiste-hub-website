@@ -10,8 +10,13 @@ module.exports = {
         }
     },
     theme: {
+        textColor: {
+            primary: '#363636'
+        },
         colors: {
-            ...colors
+            ...colors,
+            primary: '#139938',
+            secondary: '#105B8E'
         },
         extend: {
             minHeight: {
