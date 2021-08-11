@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 import gqlClient from '@/modules/blog/api/apollo-client';
 import { IArticle } from '@/modules/blog/types';
 
-const getPostAndMorePosts = async (
+const fetchArticleAndMoreArticles = async (
     postId: string,
     postIdType: string
 ): Promise<IArticle> => {
@@ -89,4 +89,4 @@ const getPostAndMorePosts = async (
     return data;
 };
 
-export default getPostAndMorePosts;
+export default fetchArticleAndMoreArticles;

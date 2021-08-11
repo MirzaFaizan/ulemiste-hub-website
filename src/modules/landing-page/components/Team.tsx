@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export const Team = (): ReactElement => {
     return (
@@ -21,7 +20,7 @@ export const Team = (): ReactElement => {
                         <div className="px-6">
                             <img
                                 alt="..."
-                                src="/assets/akim.jpeg"
+                                src="/assets/akim.png"
                                 className="shadow-lg rounded-full mx-auto max-w-120-px"
                             />
                             <div className="pt-6 text-center">
@@ -29,23 +28,6 @@ export const Team = (): ReactElement => {
                                 <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                                     Investor/ CEO
                                 </p>
-                                <div className="mt-6">
-                                    <button
-                                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-twitter"></i>
-                                    </button>
-                                    <button
-                                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-facebook-f"></i>
-                                    </button>
-                                    <button
-                                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-dribbble"></i>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -53,7 +35,7 @@ export const Team = (): ReactElement => {
                         <div className="px-6">
                             <img
                                 alt="..."
-                                src="/assets/akim.jpeg"
+                                src="/assets/tim.png"
                                 className="shadow-lg rounded-full mx-auto max-w-120-px"
                             />
                             <div className="pt-6 text-center">
@@ -62,18 +44,6 @@ export const Team = (): ReactElement => {
                                 <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                                     Country Manager / Business Developer
                                 </p>
-                                <div className="mt-6">
-                                    <button
-                                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-google"></i>
-                                    </button>
-                                    <button
-                                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-facebook-f"></i>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -81,7 +51,7 @@ export const Team = (): ReactElement => {
                         <div className="px-6">
                             <img
                                 alt="..."
-                                src="/assets/morgan.jpeg"
+                                src="/assets/morgan.png"
                                 className="shadow-lg rounded-full mx-auto max-w-120-px"
                             />
                             <div className="pt-6 text-center">
@@ -91,23 +61,6 @@ export const Team = (): ReactElement => {
                                 <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                                     Senior Software Engineer
                                 </p>
-                                <div className="mt-6">
-                                    <button
-                                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-google"></i>
-                                    </button>
-                                    <button
-                                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-twitter"></i>
-                                    </button>
-                                    <button
-                                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <i className="fab fa-instagram"></i>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,7 +68,7 @@ export const Team = (): ReactElement => {
                         <div className="px-6">
                             <img
                                 alt="..."
-                                src="/assets/faizan.jpeg"
+                                src="/assets/faizan.png"
                                 className="shadow-lg rounded-full mx-auto max-w-120-px"
                             />
                             <div className="pt-6 text-center">
@@ -123,23 +76,8 @@ export const Team = (): ReactElement => {
                                     Faizan Ejaz
                                 </h5>
                                 <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                                    Experienced Software Engineer
+                                    Software Engineer
                                 </p>
-                                <div className="mt-6">
-                                    <button
-                                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <FaLinkedin className="m-auto" />
-                                    </button>
-                                    <button className="bg-lightBlue-400 text-white text-center w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
-                                        <FaTwitter />
-                                    </button>
-                                    <button
-                                        className=" bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                                        type="button">
-                                        <FaGithub />
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>

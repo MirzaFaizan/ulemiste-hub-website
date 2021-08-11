@@ -34,7 +34,7 @@ const Blog: FC<IProps> = ({ articles }): ReactElement => {
                                     Latest News and Articles
                                 </h1>
                                 <p className="mt-4 text-lg text-blueGray-200">
-                                    blah blah something about blogs
+                                    here are some of the top news articles by us
                                 </p>
                             </div>
                         </div>
