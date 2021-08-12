@@ -1,6 +1,6 @@
-import { gql } from '@apollo/client';
 import gqlClient from '@/modules/blog/api/apollo-client';
-import { IArticle, IArticlePage } from '@/modules/blog/types';
+import { IArticlePage } from '@/modules/blog/types';
+import { gql } from '@apollo/client';
 
 const fetchArticleAndMoreArticles = async (
     postId: string
@@ -62,8 +62,11 @@ const fetchArticleAndMoreArticles = async (
     });
 
     return {
-        article: data.post,
-        suggestedArticles: data.posts.edges.map((post: IArticle) => post)
+        article: {
+            ...data.post,
+            featuredImage: data.post?.featuredImage?.node?.sourceUrl
+        },
+        suggestedArticles: data.posts.edges.map((post) => post.node)
     };
 };
 
