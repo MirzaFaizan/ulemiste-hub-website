@@ -1,15 +1,15 @@
 import React, { ReactElement } from 'react';
-import { GetStaticProps } from 'next';
 import { FC } from 'react';
-import fetchAllArticles from '@/modules/blog/api/fetchAllArticles';
-import { IArticle } from '@/modules/blog/types';
 import Navbar from '@/common/components/Nav/AuthNavbar';
-import ArticleCard from '@/modules/blog/components/ArticleCard';
-
 interface IProps {
-    articles: IArticle[];
+    title: string;
+    description?: string;
 }
-const Blog: FC<IProps> = ({ articles }): ReactElement => {
+const PageLayout: FC<IProps> = ({
+    title,
+    description,
+    children
+}): ReactElement => {
     return (
         <div>
             <Navbar />
@@ -29,11 +29,13 @@ const Blog: FC<IProps> = ({ articles }): ReactElement => {
                         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                             <div className="pr-12">
                                 <h1 className="text-white font-semibold text-5xl">
-                                    Latest News and Articles
+                                    {title}
                                 </h1>
-                                <p className="mt-4 text-lg text-blueGray-200">
-                                    here are some of the top news articles by us
-                                </p>
+                                {description && (
+                                    <p className="mt-4 text-lg text-blueGray-200">
+                                        {description}
+                                    </p>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -57,24 +59,11 @@ const Blog: FC<IProps> = ({ articles }): ReactElement => {
             </div>
             <section className="bg-blueGray-100 min-h-screen ">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap">
-                        {articles.map((article) => (
-                            <ArticleCard key={article.id} {...{ article }} />
-                        ))}
-                    </div>
+                    <div className="flex flex-wrap">{children}</div>
                 </div>
             </section>
         </div>
     );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-    const articles = await fetchAllArticles();
-    return {
-        props: {
-            articles
-        }
-    };
-};
-
-export default Blog;
+export default PageLayout;

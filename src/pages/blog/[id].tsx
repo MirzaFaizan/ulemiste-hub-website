@@ -1,23 +1,27 @@
 import fetchArticleAndMoreArticles from '@/modules/blog/api/fetchArticleAndMoreArticles';
-import { IArticle } from '@/modules/blog/types';
+import { IArticlePage } from '@/modules/blog/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import React, { FC } from 'react';
+import PageLayout from '@/common/components/Layouts/PageLayout';
 
-interface IProps {
-    // article: IArticle;
-    article: { articleId: string };
-}
-export const BlogSingle: FC<IProps> = ({ article }) => {
-    console.log(article);
-    return <div>yo {article.articleId}</div>;
+export const BlogSingle: FC<IArticlePage> = ({
+    article,
+    suggestedArticles
+}) => {
+    console.log('on the component', article);
+
+    return (
+        <PageLayout title={article.title}>
+            <div dangerouslySetInnerHTML={{ __html: article.content }} />
+        </PageLayout>
+    );
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const articleId = params?.id as string;
-    const articleIdType = params?.idType as string;
-    console.log(articleId);
-    // const article = await fetchArticleAndMoreArticles(articleId, articleIdType);
-    return { props: { article: { articleId } } };
+    const article = await fetchArticleAndMoreArticles(articleId);
+    console.log(article);
+    return { props: { ...article } };
 };
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {

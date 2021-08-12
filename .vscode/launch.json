@@ -7,13 +7,6 @@
             "name": "Launch Program",
             "skipFiles": ["<node_internals>/**"],
             "port": 9229
-        },
-        {
-            "name": "Docker Node.js Launch",
-            "type": "docker",
-            "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "platform": "node"
         }
     ]
 }

@@ -6,4 +6,10 @@ export interface IArticle {
     status: string;
     title: string;
     excerpt: string;
+    featuredImage?: string;
+}
+
+export interface IArticlePage {
+    article: IArticle;
+    suggestedArticles?: IArticle[];
 }

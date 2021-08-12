@@ -1,24 +1,15 @@
 import { gql } from '@apollo/client';
 import gqlClient from '@/modules/blog/api/apollo-client';
-import { IArticle } from '@/modules/blog/types';
+import { IArticle, IArticlePage } from '@/modules/blog/types';
 
 const fetchArticleAndMoreArticles = async (
-    postId: string,
-    postIdType: string
-): Promise<IArticle> => {
+    postId: string
+): Promise<IArticlePage> => {
     // The slug may be the id of an unpublished post
     const { data } = await gqlClient.query({
         query: gql`
-            fragment AuthorFields on User {
-                name
-                firstName
-                lastName
-                avatar {
-                    url
-                }
-            }
-
             fragment PostFields on Post {
+                id
                 title
                 excerpt
                 slug
@@ -28,19 +19,7 @@ const fetchArticleAndMoreArticles = async (
                         sourceUrl
                     }
                 }
-                author {
-                    node {
-                        ...AuthorFields
-                    }
-                }
                 categories {
-                    edges {
-                        node {
-                            name
-                        }
-                    }
-                }
-                tags {
                     edges {
                         node {
                             name
@@ -49,8 +28,8 @@ const fetchArticleAndMoreArticles = async (
                 }
             }
 
-            query PostBySlug($id: ID!, $idType: PostIdType!) {
-                post(id: $id, idType: $idType) {
+            query PostBySlug($id: ID!) {
+                post(id: $id) {
                     ...PostFields
                     content
                     revisions(
@@ -59,14 +38,10 @@ const fetchArticleAndMoreArticles = async (
                     ) {
                         edges {
                             node {
+                                id
                                 title
                                 excerpt
                                 content
-                                author {
-                                    node {
-                                        ...AuthorFields
-                                    }
-                                }
                             }
                         }
                     }
@@ -83,10 +58,13 @@ const fetchArticleAndMoreArticles = async (
                 }
             }
         `,
-        variables: { postId, postIdType }
+        variables: { id: postId }
     });
 
-    return data;
+    return {
+        article: data.post,
+        suggestedArticles: data.posts.edges.map((post: IArticle) => post)
+    };
 };
 
 export default fetchArticleAndMoreArticles;
