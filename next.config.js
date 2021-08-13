@@ -4,16 +4,19 @@
 
 const nextTranslate = require('next-translate');
 
-module.exports = nextTranslate({
-    webpack: (config) => {
-        return config;
-    },
-    webpackDevMiddleware: (config) => {
-        config.watchOptions = {
-            poll: 1000,
-            aggregateTimeout: 300
-        };
+module.exports = {
+    eslint: { ignoreDuringBuilds: true },
+    nextTranslate: nextTranslate({
+        webpack: (config) => {
+            return config;
+        },
+        webpackDevMiddleware: (config) => {
+            config.watchOptions = {
+                poll: 1000,
+                aggregateTimeout: 300
+            };
 
-        return config;
-    }
-});
+            return config;
+        }
+    })
+};
