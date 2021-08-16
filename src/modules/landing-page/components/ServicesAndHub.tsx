@@ -108,9 +108,15 @@ const ServicesAndHub = (): ReactElement => {
                         </p>
                         <Link href="/">
                             <button
-                                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                className="bg-emerald-500 mb-4 md:mb-0 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1  ease-linear transition-all duration-150"
+                                onClick={() =>
+                                    window.open(
+                                        'https://31fpxusnlyk.typeform.com/to/hCRkMjvR',
+                                        '_blank' // <- This is what makes the link open in a new window.
+                                    )
+                                }
                                 type="button">
-                                Book appointment to visit
+                                Book time to visit
                             </button>
                         </Link>
                     </div>

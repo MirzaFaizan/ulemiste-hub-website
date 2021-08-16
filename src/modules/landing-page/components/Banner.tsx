@@ -16,11 +16,11 @@ export const Banner = (): ReactElement => {
             <div className="container relative mx-auto">
                 <div className="items-center flex flex-wrap">
                     <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                        <div className="pr-12">
+                        <div>
                             <h1 className="text-white font-semibold text-5xl">
                                 Ülemiste Startup Hub, powered by VNTRS
                             </h1>
-                            <h1 className="text-white font-semibold text-4xl">
+                            <h1 className="text-white font-semibold text-2xl mt-1 ">
                                 Where great ideas become successful
                             </h1>
                             <p className="mt-8 text-lg text-blueGray-200">

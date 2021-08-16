@@ -1,5 +1,10 @@
 import React, { ReactElement } from 'react';
-import { MdOpenInNew } from 'react-icons/md';
+import {
+    MdOpenInNew as OpenFormIcon,
+    MdAttachMoney as InvestmentIcon,
+    MdContactMail as ContactUsIcon
+} from 'react-icons/md';
+import { FaHandshake as SweatEquityIcon } from 'react-icons/fa';
 
 export const ContactUs = (): ReactElement => {
     return (
@@ -36,7 +41,7 @@ export const ContactUs = (): ReactElement => {
                 <div className="flex flex-wrap mt-12 justify-center">
                     <div className="w-full lg:w-3/12 px-4 text-center">
                         <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                            <i className="fas fa-medal text-xl"></i>
+                            <ContactUsIcon size="md" />
                         </div>
                         <h6 className="text-xl mt-5 font-semibold text-white">
                             Scale your Tech
@@ -48,14 +53,20 @@ export const ContactUs = (): ReactElement => {
                         </p>
                         <button
                             className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
-                            type="button">
+                            type="button"
+                            onClick={() =>
+                                window.open(
+                                    'https://31fpxusnlyk.typeform.com/to/wc160ehF',
+                                    '_blank' // <- This is what makes the link open in a new window.
+                                )
+                            }>
                             Contact Us{' '}
-                            <MdOpenInNew className="inline-block text-lg" />
+                            <OpenFormIcon className="inline-block text-lg" />
                         </button>
                     </div>
-                    <div className="w-full lg:w-3/12 px-4 text-center">
+                    <div className="w-full mt-4 lg:w-3/12 px-4 text-center">
                         <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                            <i className="fas fa-poll text-xl"></i>
+                            <InvestmentIcon size="md" />
                         </div>
                         <h5 className="text-xl mt-5 font-semibold text-white">
                             Apply for funding
@@ -68,14 +79,20 @@ export const ContactUs = (): ReactElement => {
                         </p>
                         <button
                             className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            onClick={() =>
+                                window.open(
+                                    'https://31fpxusnlyk.typeform.com/to/PaxsPfMo',
+                                    '_blank' // <- This is what makes the link open in a new window.
+                                )
+                            }
                             type="button">
                             Apply{' '}
-                            <MdOpenInNew className="inline-block text-lg" />
+                            <OpenFormIcon className="inline-block text-lg" />
                         </button>
                     </div>
-                    <div className="w-full lg:w-3/12 px-4 text-center">
+                    <div className="w-full mt-4 lg:w-3/12 px-4 text-center">
                         <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                            <i className="fas fa-lightbulb text-xl"></i>
+                            <SweatEquityIcon size="md" />
                         </div>
                         <h5 className="text-xl mt-5 font-semibold text-white">
                             SWEAT equity deal
@@ -87,9 +104,15 @@ export const ContactUs = (): ReactElement => {
                         </p>
                         <button
                             className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            onClick={() =>
+                                window.open(
+                                    'https://31fpxusnlyk.typeform.com/to/PaxsPfMo',
+                                    '_blank' // <- This is what makes the link open in a new window.
+                                )
+                            }
                             type="button">
                             Get Deal{' '}
-                            <MdOpenInNew className="inline-block text-lg" />
+                            <OpenFormIcon className="inline-block text-lg" />
                         </button>
                     </div>
                 </div>

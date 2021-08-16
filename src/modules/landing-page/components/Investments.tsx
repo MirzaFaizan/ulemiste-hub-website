@@ -1,4 +1,10 @@
 import React, { ReactElement } from 'react';
+import {
+    FaRocket as RocketIcon,
+    FaMoneyBill as InvestmentIcon,
+    FaHandshake as SweatEquityIcon,
+    FaPaperPlane as VCIcon
+} from 'react-icons/fa';
 
 export const Investments = (): ReactElement => {
     return (
@@ -25,7 +31,7 @@ export const Investments = (): ReactElement => {
                     <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                         <div className="md:pr-12">
                             <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
-                                <i className="fas fa-rocket text-xl"></i>
+                                <RocketIcon />
                             </div>
                             <h3 className="text-3xl font-semibold">
                                 Investments
@@ -40,7 +46,7 @@ export const Investments = (): ReactElement => {
                                     <div className="flex items-center">
                                         <div>
                                             <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                <i className="fas fa-fingerprint"></i>
+                                                <SweatEquityIcon />
                                             </span>
                                         </div>
                                         <div>
@@ -54,7 +60,7 @@ export const Investments = (): ReactElement => {
                                     <div className="flex items-center">
                                         <div>
                                             <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                <i className="fab fa-html5"></i>
+                                                <InvestmentIcon />
                                             </span>
                                         </div>
                                         <div>
@@ -68,7 +74,7 @@ export const Investments = (): ReactElement => {
                                     <div className="flex items-center">
                                         <div>
                                             <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                <i className="far fa-paper-plane"></i>
+                                                <VCIcon />
                                             </span>
                                         </div>
                                         <div>

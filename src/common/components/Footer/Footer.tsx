@@ -1,5 +1,10 @@
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
+import {
+    FaLinkedin as LinkedInIcon,
+    FaInstagram as InstagramIcon,
+    FaFacebookSquare as FacebookIcon
+} from 'react-icons/fa';
 
 const Footer = (): ReactElement => {
     return (
@@ -32,24 +37,37 @@ const Footer = (): ReactElement => {
                             </h5>
                             <div className="mt-6 lg:mb-0 mb-6">
                                 <button
-                                    className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i className="fab fa-twitter"></i>
+                                    className=" text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center  outline-none focus:outline-none mr-2"
+                                    type="button"
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.linkedin.com/company/vntrs',
+                                            '_blank' // <- This is what makes the link open in a new window.
+                                        )
+                                    }>
+                                    <LinkedInIcon size="md" />
                                 </button>
                                 <button
-                                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i className="fab fa-facebook-square"></i>
+                                    className=" text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center  outline-none focus:outline-none mr-2"
+                                    type="button"
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.instagram.com/lifeatvntrs/',
+                                            '_blank' // <- This is what makes the link open in a new window.
+                                        )
+                                    }>
+                                    <InstagramIcon size="md" />
                                 </button>
                                 <button
-                                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i className="fab fa-dribbble"></i>
-                                </button>
-                                <button
-                                    className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                    type="button">
-                                    <i className="fab fa-github"></i>
+                                    className=" text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center  outline-none focus:outline-none mr-2"
+                                    type="button"
+                                    onClick={() =>
+                                        window.open(
+                                            'https://facebook.com/vntrsconsulting',
+                                            '_blank' // <- This is what makes the link open in a new window.
+                                        )
+                                    }>
+                                    <FacebookIcon size="md" />
                                 </button>
                             </div>
                         </div>
@@ -63,7 +81,9 @@ const Footer = (): ReactElement => {
                                         <li>
                                             <a
                                                 className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://vntrs.com/">
+                                                href="https://vntrs.com/"
+                                                target="_blank"
+                                                rel="noreferrer">
                                                 About Us
                                             </a>
                                         </li>
@@ -73,14 +93,16 @@ const Footer = (): ReactElement => {
                                         <li>
                                             <a
                                                 className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://www.github.com/creativetimofficial?ref=nnjs-footer">
+                                                href="https://career.vntrs.se/"
+                                                target="_blank"
+                                                rel="noreferrer">
                                                 Careers
                                             </a>
                                         </li>
                                         <li>
                                             <a
                                                 className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://www.creative-tim.com/bootstrap-themes/free?ref=nnjs-footer">
+                                                href="https://veq.vc/">
                                                 Investments
                                             </a>
                                         </li>
@@ -98,24 +120,13 @@ const Footer = (): ReactElement => {
                                                 VEQ
                                             </a>
                                         </li>
+
                                         <li>
                                             <a
                                                 className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://creative-tim.com/terms?ref=nnjs-footer">
-                                                Terms & Conditions
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://creative-tim.com/privacy?ref=nnjs-footer">
-                                                Privacy Policy
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://creative-tim.com/contact-us?ref=nnjs-footer">
+                                                href="https://31fpxusnlyk.typeform.com/to/wc160ehF"
+                                                target="_blank"
+                                                rel="noreferrer">
                                                 Contact Us
                                             </a>
                                         </li>
