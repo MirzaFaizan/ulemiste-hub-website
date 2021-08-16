@@ -2,7 +2,7 @@ import fetchArticleAndMoreArticles from '@/modules/blog/api/fetchArticleAndMoreA
 import { IArticlePage } from '@/modules/blog/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import React, { FC } from 'react';
-import PageLayout from '@/common/components/Layouts/PageLayout';
+import PageLayout from '@/common/components/Layouts/BlogLayout';
 import ArticleCard from '@/modules/blog/components/ArticleCard';
 
 export const BlogSingle: FC<IArticlePage> = ({

@@ -1,4 +1,5 @@
 import Footer from '@/common/components/Footer/Footer';
+import PageLayout from '@/common/components/Layouts/PageLayout';
 // components
 import Navbar from '@/common/components/Nav/AuthNavbar';
 import { Banner } from '@/modules/landing-page/components/Banner';
@@ -11,7 +12,9 @@ import React, { ReactElement } from 'react';
 
 const index = (): ReactElement => {
     return (
-        <>
+        <PageLayout
+            title="Ulemiste Hub by VNTRS"
+            description="Co-working space and startup hub">
             <Navbar />
             <main>
                 {/* Banner */}
@@ -33,7 +36,7 @@ const index = (): ReactElement => {
                 <ContactUs />
             </main>
             <Footer />
-        </>
+        </PageLayout>
     );
 };
 

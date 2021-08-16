@@ -1,4 +1,4 @@
-import PageLayout from '@/common/components/Layouts/PageLayout';
+import PageLayout from '@/common/components/Layouts/BlogLayout';
 import fetchAllArticles from '@/modules/blog/api/fetchAllArticles';
 import ArticleCard from '@/modules/blog/components/ArticleCard';
 import { IArticle } from '@/modules/blog/types';
