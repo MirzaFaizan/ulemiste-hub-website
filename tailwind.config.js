@@ -1,6 +1,17 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require('tailwindcss/colors');
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+const fontFamily = defaultTheme.fontFamily;
+fontFamily['sans'] = [
+    'Open Sans Regular',
+    'Roboto', // <-- Roboto is a default sans font now
+    'system-ui'
+    // <-- you may provide more font fallbacks here
+];
+
 module.exports = {
     purge: {
         enabled: true,
@@ -10,6 +21,7 @@ module.exports = {
         }
     },
     theme: {
+        fontFamily: fontFamily,
         textColor: {
             primary: '#363636'
         },
