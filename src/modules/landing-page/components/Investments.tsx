@@ -85,6 +85,14 @@ export const Investments = (): ReactElement => {
                                     </div>
                                 </li>
                             </ul>
+                            <button
+                                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                                type="button"
+                                onClick={() =>
+                                    window.open('https://veq.vc', '_blank')
+                                }>
+                                Visit VEQ
+                            </button>
                         </div>
                     </div>
                     <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
