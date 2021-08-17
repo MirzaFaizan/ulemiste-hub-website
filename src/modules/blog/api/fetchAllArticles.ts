@@ -17,6 +17,11 @@ const fetchAllArticles = async (): Promise<IArticle[]> => {
                             status
                             title
                             excerpt
+                            featuredImage {
+                                node {
+                                    sourceUrl
+                                }
+                            }
                         }
                     }
                 }
@@ -24,7 +29,12 @@ const fetchAllArticles = async (): Promise<IArticle[]> => {
         `
     });
 
-    return data.posts.edges.map((edge) => edge.node);
+    return data.posts.edges.map(
+        (edge): IArticle => ({
+            ...edge.node,
+            featuredImage: edge.node.featuredImage?.node.sourceUrl
+        })
+    );
 };
 
 export default fetchAllArticles;

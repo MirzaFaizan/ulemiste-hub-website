@@ -6,6 +6,7 @@ const nextTranslate = require('next-translate');
 
 module.exports = {
     eslint: { ignoreDuringBuilds: true },
+    images: { domains: ['new.eluring.com'] },
     nextTranslate: nextTranslate({
         webpack: (config) => {
             return config;
