@@ -1,10 +1,9 @@
-import Link from 'next/link';
 import React, { ReactElement } from 'react';
 import { FaAnchor, FaAward, FaMoneyBill, FaPaperPlane } from 'react-icons/fa';
 
 const CompanyInfo = (): ReactElement => {
     return (
-        <section className="relative py-20 bg-blueGray-100">
+        <section className="relative py-20 bg-blueGray-100" id="about-us">
             <div
                 className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                 style={{ transform: 'translateZ(0)' }}>
@@ -94,7 +93,7 @@ const CompanyInfo = (): ReactElement => {
                         </div>
 
                         <button
-                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            className="bg-primary text-white active:bg-primary font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
                             type="button"
                             onClick={() =>
                                 window.open('https://vntrs.com', '_blank')

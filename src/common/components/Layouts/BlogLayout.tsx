@@ -1,6 +1,6 @@
 import React, { ReactElement, FC } from 'react';
 import Head from 'next/head';
-import Navbar from '@/common/components/Nav/AuthNavbar';
+import Navbar from '@/common/components/Nav/NavBar';
 interface IProps {
     title: string;
     description?: string;

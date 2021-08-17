@@ -8,7 +8,7 @@ import {
 
 export const Investments = (): ReactElement => {
     return (
-        <section className="relative py-20">
+        <section className="relative py-20" id="funding-street">
             <div
                 className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                 style={{ transform: 'translateZ(0)' }}>
@@ -34,7 +34,7 @@ export const Investments = (): ReactElement => {
                                 <RocketIcon />
                             </div>
                             <h3 className="text-3xl font-semibold">
-                                Investments
+                                Funding Street
                             </h3>
                             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                                 The extension comes with three pre-built pages

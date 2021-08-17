@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import React, { ReactElement } from 'react';
-import { FaAward, FaDesktop, FaMoneyBill } from 'react-icons/fa';
 import { ImOffice } from 'react-icons/im';
 
 const ServicesAndHub = (): ReactElement => {
     return (
-        <section className="pb-20 bg-blueGray-200 -mt-24">
+        <section className="pb-20 bg-blueGray-200 pt-20" id="hub">
             <div className="container mx-auto px-4">
-                <div className="flex flex-wrap">
+                {/* <div className="flex flex-wrap">
                     <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div className="px-4 py-5 flex-auto">
@@ -78,11 +77,11 @@ const ServicesAndHub = (): ReactElement => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/*  Ulemiste Hub Section*/}
 
-                <div className="flex flex-wrap items-center mt-32">
+                <div className="flex flex-wrap items-center ">
                     <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                         <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                             <ImOffice />

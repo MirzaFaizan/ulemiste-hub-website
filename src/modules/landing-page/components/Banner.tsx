@@ -7,7 +7,7 @@ export const Banner = (): ReactElement => {
                 className="absolute top-0 w-full h-full bg-center bg-cover"
                 style={{
                     backgroundImage:
-                        "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
+                        "url('https://vntrs.com/wp-content/uploads/2021/06/about-us-hero-img.png')"
                 }}>
                 <span
                     id="blackOverlay"
@@ -17,18 +17,12 @@ export const Banner = (): ReactElement => {
                 <div className="items-center flex flex-wrap">
                     <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                         <div>
-                            <h1 className="text-white font-semibold text-5xl">
+                            <h1 className="text-white font-semibold text-4xl ">
                                 Ülemiste Startup Hub, powered by VNTRS
                             </h1>
-                            <h1 className="text-white font-semibold text-2xl mt-1 ">
+                            <h1 className="text-white font-semibold text-2xl mt-3 ">
                                 Where great ideas become successful
                             </h1>
-                            <p className="mt-8 text-lg text-blueGray-200">
-                                We create successful companies together with our
-                                clients by providing the right type of
-                                competence within tech, growth, design, and
-                                business development at the right time.
-                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import Footer from '@/common/components/Footer/Footer';
 import PageLayout from '@/common/components/Layouts/PageLayout';
 // components
-import Navbar from '@/common/components/Nav/AuthNavbar';
+import Navbar from '@/common/components/Nav/NavBar';
 import { Banner } from '@/modules/landing-page/components/Banner';
 import CompanyInfo from '@/modules/landing-page/components/CompanyInfo';
 import { ContactUs } from '@/modules/landing-page/components/ContactUs';
@@ -23,11 +23,11 @@ const index = (): ReactElement => {
                 {/* Services */}
                 <ServicesAndHub />
 
-                {/* VNTRS details */}
-                <CompanyInfo />
-
                 {/* SWEAT deals/dev resource intro */}
                 <Investments />
+
+                {/* VNTRS details */}
+                <CompanyInfo />
 
                 {/* hosting teams */}
                 <Team />
