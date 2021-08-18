@@ -81,12 +81,12 @@ const NavBar = (): ReactElement => {
                             <li className="flex items-center">
                                 {isIndexRoute ? (
                                     <NavLink
-                                        className="bg-primary text-blueGray-700 cursor-pointer active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2  shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150 rounded-none"
+                                        className="bg-primary text-white cursor-pointer active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2  shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150 rounded-none"
                                         path="connect"
                                         label="Connect"
                                     />
                                 ) : (
-                                    <div className="bg-primary text-blueGray-700 cursor-pointer active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2  shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150 rounded-none">
+                                    <div className="bg-primary text-white cursor-pointer active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2  shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150 rounded-none">
                                         <Link href="/#connect">Connect</Link>
                                     </div>
                                 )}

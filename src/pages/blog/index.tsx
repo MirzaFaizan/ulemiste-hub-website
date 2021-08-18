@@ -1,4 +1,4 @@
-import PageLayout from '@/common/components/Layouts/BlogLayout';
+import BlogLayout from '@/common/components/Layouts/BlogLayout';
 import fetchAllArticles from '@/modules/blog/api/fetchAllArticles';
 import ArticleCard from '@/modules/blog/components/ArticleCard';
 import { IArticle } from '@/modules/blog/types';
@@ -10,13 +10,13 @@ interface IProps {
 }
 const Blog: FC<IProps> = ({ articles }): ReactElement => {
     return (
-        <PageLayout
+        <BlogLayout
             title="News and Articles"
             description="some latest news and articles">
             {articles.map((article) => (
                 <ArticleCard key={article.id} {...{ article }} />
             ))}
-        </PageLayout>
+        </BlogLayout>
     );
 };
 

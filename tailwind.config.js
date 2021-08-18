@@ -13,6 +13,7 @@ fontFamily['sans'] = [
 ];
 
 module.exports = {
+    mode: 'jit',
     purge: {
         enabled: true,
         content: ['./**/*.html', './*.html', './**/*.ts', './*.tsx'],
@@ -23,12 +24,13 @@ module.exports = {
     theme: {
         fontFamily: fontFamily,
         textColor: {
-            primary: '#363636'
+            primary: '#363636',
+            secondary: '#139938'
         },
         colors: {
-            ...colors,
             primary: '#139938',
-            secondary: '#105B8E'
+            secondary: '#105B8E',
+            vntrs: '#139938'
         },
         extend: {
             minHeight: {

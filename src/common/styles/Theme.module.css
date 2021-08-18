@@ -1225,6 +1225,11 @@ select {
     background-clip: text;
 }
 
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: #139938;
+}
+
 .bg-black {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 0, 0, var(--tw-bg-opacity));

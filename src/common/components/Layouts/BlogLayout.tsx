@@ -1,13 +1,16 @@
 import React, { ReactElement, FC } from 'react';
 import Head from 'next/head';
 import Navbar from '@/common/components/Nav/NavBar';
+import Footer from '@/common/components/Footer/Footer';
 interface IProps {
     title: string;
     description?: string;
+    featuredImage?: string;
 }
 const BlogLayout: FC<IProps> = ({
     title,
     description,
+    featuredImage,
     children
 }): ReactElement => {
     return (
@@ -32,8 +35,9 @@ const BlogLayout: FC<IProps> = ({
                 <div
                     className="absolute top-0 w-full h-full bg-center bg-cover"
                     style={{
-                        backgroundImage:
-                            "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
+                        backgroundImage: featuredImage
+                            ? `url('${featuredImage}')`
+                            : "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
                     }}>
                     <span
                         id="blackOverlay"
@@ -67,16 +71,17 @@ const BlogLayout: FC<IProps> = ({
                         x="0"
                         y="0">
                         <polygon
-                            className="text-blueGray-100 fill-current"
+                            className="text-white fill-current"
                             points="2560 0 2560 100 0 100"></polygon>
                     </svg>
                 </div>
             </div>
-            <section className="bg-blueGray-100 min-h-screen ">
+            <section className="bg-white min-h-screen ">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap">{children}</div>
                 </div>
             </section>
+            <Footer notWhite />
         </main>
     );
 };

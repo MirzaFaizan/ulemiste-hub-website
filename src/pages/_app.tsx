@@ -1,3 +1,4 @@
+import 'src/common/styles/globals.css';
 import 'src/common/styles/tailwind.css';
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
 import { ReactElement } from 'react';

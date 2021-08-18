@@ -6,10 +6,18 @@ import {
     FaFacebookSquare as FacebookIcon
 } from 'react-icons/fa';
 
-const Footer = (): ReactElement => {
+interface IProps {
+    notWhite?: boolean;
+}
+const Footer = ({ notWhite }: IProps): ReactElement => {
     return (
         <>
-            <footer className="relative bg-blueGray-200 pt-8 pb-6">
+            <footer
+                className={
+                    notWhite
+                        ? 'relative bg-blueGray-100 pt-8 pb-6'
+                        : 'relative bg-white pt-8 pb-6'
+                }>
                 <div
                     className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                     style={{ transform: 'translateZ(0)' }}>
@@ -22,7 +30,9 @@ const Footer = (): ReactElement => {
                         x="0"
                         y="0">
                         <polygon
-                            className="text-blueGray-200 fill-current"
+                            className={`${
+                                notWhite ? 'text-blueGray-100' : 'text-white'
+                            } fill-current`}
                             points="2560 0 2560 100 0 100"></polygon>
                     </svg>
                 </div>

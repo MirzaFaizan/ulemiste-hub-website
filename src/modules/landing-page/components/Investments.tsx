@@ -8,7 +8,7 @@ import {
 
 export const Investments = (): ReactElement => {
     return (
-        <section className="relative py-20" id="funding-street">
+        <section className="relative py-20 bg-blueGray-100" id="funding-street">
             <div
                 className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                 style={{ transform: 'translateZ(0)' }}>
@@ -21,11 +21,10 @@ export const Investments = (): ReactElement => {
                     x="0"
                     y="0">
                     <polygon
-                        className="text-white fill-current"
+                        className="text-blueGray-100 fill-current"
                         points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>
-
             <div className="container mx-auto px-4">
                 <div className="items-center flex flex-wrap">
                     <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -86,7 +85,7 @@ export const Investments = (): ReactElement => {
                                 </li>
                             </ul>
                             <button
-                                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                                className="bg-primary text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded-none shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
                                 type="button"
                                 onClick={() =>
                                     window.open('https://veq.vc', '_blank')

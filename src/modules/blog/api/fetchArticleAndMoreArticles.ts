@@ -66,7 +66,10 @@ const fetchArticleAndMoreArticles = async (
             ...data.post,
             featuredImage: data.post?.featuredImage?.node?.sourceUrl
         },
-        suggestedArticles: data.posts.edges.map((post) => post.node)
+        suggestedArticles: data.posts.edges.map((post) => ({
+            ...post.node,
+            featuredImage: post.node?.featuredImage?.node?.sourceUrl
+        }))
     };
 };
 

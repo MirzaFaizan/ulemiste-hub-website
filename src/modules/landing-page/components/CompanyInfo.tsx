@@ -1,9 +1,10 @@
 import React, { ReactElement } from 'react';
 import { FaAnchor, FaAward, FaMoneyBill, FaPaperPlane } from 'react-icons/fa';
+import { MdOpenInNew } from 'react-icons/md';
 
 const CompanyInfo = (): ReactElement => {
     return (
-        <section className="relative py-20 bg-blueGray-100" id="about-us">
+        <section className="relative py-20 bg-white" id="about-us">
             <div
                 className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                 style={{ transform: 'translateZ(0)' }}>
@@ -16,7 +17,7 @@ const CompanyInfo = (): ReactElement => {
                     x="0"
                     y="0">
                     <polygon
-                        className="text-blueGray-100 fill-current"
+                        className="text-white fill-current"
                         points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>
@@ -43,19 +44,18 @@ const CompanyInfo = (): ReactElement => {
                                 We create successful companies together with our
                                 clients by providing the right type of
                                 competence within tech, growth, design, and
-                                business development at the right time.
+                                business development at the right time. Here are
+                                some of our use cases:
                             </p>
                             <ul className="list-none mt-6">
                                 <li className="py-2">
                                     <div className="flex items-center">
                                         <div>
-                                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                <FaMoneyBill />
-                                            </span>
-                                        </div>
-                                        <div>
                                             <h4 className="text-blueGray-500">
-                                                Cash Projects
+                                                <a href="https://vntrs.com/project-svea/">
+                                                    - SVEA EKONOMI{'  '}
+                                                    <MdOpenInNew className="inline-block mb-1" />
+                                                </a>
                                             </h4>
                                         </div>
                                     </div>
@@ -63,14 +63,11 @@ const CompanyInfo = (): ReactElement => {
                                 <li className="py-2">
                                     <div className="flex items-center">
                                         <div>
-                                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                <FaAnchor />
-                                            </span>
-                                        </div>
-                                        <div>
                                             <h4 className="text-blueGray-500">
-                                                Business Development/ Growth
-                                                Hacking
+                                                <a href="https://vntrs.com/project-ignite-sweden/">
+                                                    - IGNITE SWEDEN{'  '}
+                                                    <MdOpenInNew className="inline-block mb-1" />
+                                                </a>
                                             </h4>
                                         </div>
                                     </div>
@@ -78,13 +75,12 @@ const CompanyInfo = (): ReactElement => {
                                 <li className="py-2">
                                     <div className="flex items-center">
                                         <div>
-                                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                <FaPaperPlane />
-                                            </span>
-                                        </div>
-                                        <div>
                                             <h4 className="text-blueGray-500">
-                                                Consultation
+                                                <a href="https://vntrs.com/project-digital-diabetes-analytics/">
+                                                    - DIGITAL DIABETES ANALYTICS
+                                                    {'  '}
+                                                    <MdOpenInNew className="inline-block mb-1" />
+                                                </a>
                                             </h4>
                                         </div>
                                     </div>
@@ -93,7 +89,7 @@ const CompanyInfo = (): ReactElement => {
                         </div>
 
                         <button
-                            className="bg-primary text-white active:bg-primary font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            className="bg-primary text-white active:bg-primary font-bold uppercase text-sm px-6 py-3 rounded-none shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
                             type="button"
                             onClick={() =>
                                 window.open('https://vntrs.com', '_blank')

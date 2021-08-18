@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 
 export const Team = (): ReactElement => {
     return (
-        <section className=" relative pt-20 pb-48">
+        <section className="relative py-20 bg-blueGray-100" id="funding-street">
             <div
-                className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20 z-40"
+                className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                 style={{ transform: 'translateZ(0)' }}>
                 <svg
                     className="absolute bottom-0 overflow-hidden"
@@ -15,7 +15,7 @@ export const Team = (): ReactElement => {
                     x="0"
                     y="0">
                     <polygon
-                        className="text-white fill-current"
+                        className="text-blueGray-100 fill-current"
                         points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>

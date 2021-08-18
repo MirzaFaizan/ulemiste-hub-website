@@ -23,7 +23,7 @@ const ArticleCard: FC<IProps> = ({ article }): ReactElement => {
                         {article.title}
                     </div>
                     <div
-                        className="text-gray-700 text-base"
+                        className="text-gray-700 text-base truncate"
                         dangerouslySetInnerHTML={{ __html: article.excerpt }}
                     />
                 </div>

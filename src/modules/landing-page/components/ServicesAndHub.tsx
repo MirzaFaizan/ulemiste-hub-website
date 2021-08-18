@@ -4,7 +4,7 @@ import { ImOffice } from 'react-icons/im';
 
 const ServicesAndHub = (): ReactElement => {
     return (
-        <section className="pb-20 bg-blueGray-200 pt-20" id="hub">
+        <section className="pb-20 bg-white pt-20" id="hub">
             <div className="container mx-auto px-4">
                 {/* <div className="flex flex-wrap">
                     <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -107,7 +107,7 @@ const ServicesAndHub = (): ReactElement => {
                         </p>
                         <Link href="/">
                             <button
-                                className="bg-emerald-500 mb-4 md:mb-0 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1  ease-linear transition-all duration-150"
+                                className="bg-primary mb-4 md:mb-0 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded-none shadow hover:shadow-lg outline-none focus:outline-none mr-1  ease-linear transition-all duration-150"
                                 onClick={() =>
                                     window.open(
                                         'https://31fpxusnlyk.typeform.com/to/hCRkMjvR',
@@ -121,22 +121,13 @@ const ServicesAndHub = (): ReactElement => {
                     </div>
 
                     <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                        <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-emerald-500">
+                        <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-primary">
                             <img
                                 alt="..."
                                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                                 className="w-full align-middle rounded-t-lg"
                             />
                             <blockquote className="relative p-8 mb-4">
-                                <svg
-                                    preserveAspectRatio="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 583 95"
-                                    className="absolute left-0 w-full block h-95-px -top-94-px">
-                                    <polygon
-                                        points="-30,95 583,95 583,65"
-                                        className="text-emerald-500 fill-current"></polygon>
-                                </svg>
                                 <h4 className="text-xl font-bold text-white">
                                     Top notch work environment
                                 </h4>

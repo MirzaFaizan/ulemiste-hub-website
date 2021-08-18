@@ -2,7 +2,7 @@ import fetchArticleAndMoreArticles from '@/modules/blog/api/fetchArticleAndMoreA
 import { IArticlePage } from '@/modules/blog/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import React, { FC } from 'react';
-import PageLayout from '@/common/components/Layouts/BlogLayout';
+import BlogLayout from '@/common/components/Layouts/BlogLayout';
 import ArticleCard from '@/modules/blog/components/ArticleCard';
 
 export const BlogSingle: FC<IArticlePage> = ({
@@ -10,24 +10,22 @@ export const BlogSingle: FC<IArticlePage> = ({
     suggestedArticles
 }) => {
     return (
-        <PageLayout title={article.title}>
-            <div className=" text-base">
+        <BlogLayout title={article.title} featuredImage={article.featuredImage}>
+            <div className="text-lg text-justify my-6">
                 <div dangerouslySetInnerHTML={{ __html: article.content }} />
             </div>
 
-            <section className="bg-blueGray-100  ">
-                <div className="container mx-auto px-4 py-4">
-                    <h1 className="text-lg text-center text-primary">
-                        Read more articles
-                    </h1>
-                    <div className="flex flex-wrap">
-                        {suggestedArticles.map((article) => (
-                            <ArticleCard key={article.id} {...{ article }} />
-                        ))}
-                    </div>
+            <div className="container mx-auto p-8 ">
+                <h1 className="text-4xl text-center text-primary">
+                    Read more articles
+                </h1>
+                <div className="flex flex-wrap py-20">
+                    {suggestedArticles.map((article) => (
+                        <ArticleCard key={article.id} {...{ article }} />
+                    ))}
                 </div>
-            </section>
-        </PageLayout>
+            </div>
+        </BlogLayout>
     );
 };
 
