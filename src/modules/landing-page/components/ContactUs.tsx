@@ -8,7 +8,7 @@ import { FaHandshake as SweatEquityIcon } from 'react-icons/fa';
 
 export const ContactUs = (): ReactElement => {
     return (
-        <section className="pb-20 relative block bg-blueGray-800" id="connect">
+        <section className="py-20 relative block bg-blueGray-800" id="connect">
             <div
                 className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                 style={{ transform: 'translateZ(0)' }}>
@@ -39,7 +39,7 @@ export const ContactUs = (): ReactElement => {
                     </div>
                 </div>
                 <div className="flex flex-wrap mt-12 justify-center">
-                    <div className="w-full lg:w-3/12 px-4 text-center">
+                    <div className="w-full mt-3 lg:w-3/12 px-4 py-5 text-center">
                         <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                             <ContactUsIcon size="md" />
                         </div>
@@ -64,7 +64,7 @@ export const ContactUs = (): ReactElement => {
                             <OpenFormIcon className="inline-block text-lg" />
                         </button>
                     </div>
-                    <div className="w-full mt-4 lg:w-3/12 px-4 text-center">
+                    <div className="w-full mt-4 lg:w-3/12 px-4 py-5 text-center">
                         <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                             <InvestmentIcon size="md" />
                         </div>
@@ -90,7 +90,7 @@ export const ContactUs = (): ReactElement => {
                             <OpenFormIcon className="inline-block text-lg" />
                         </button>
                     </div>
-                    <div className="w-full mt-4 lg:w-3/12 px-4 text-center">
+                    <div className="w-full mt-4 lg:w-3/12 px-4 py-5  text-center">
                         <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                             <SweatEquityIcon size="md" />
                         </div>

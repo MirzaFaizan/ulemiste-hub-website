@@ -24,15 +24,13 @@ const NavBar = (): ReactElement => {
                             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}>
-                            <FaBars color="white" />
+                            <FaBars color="black" />
                         </button>
                     </div>
                     <div
                         className={
                             'lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none' +
-                            (navbarOpen
-                                ? ' block rounded shadow-lg'
-                                : ' hidden')
+                            (navbarOpen ? ' block ' : ' hidden')
                         }
                         id="example-navbar-warning">
                         <ul className="flex flex-col lg:flex-row list-none mr-auto">

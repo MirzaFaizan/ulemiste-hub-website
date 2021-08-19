@@ -16,7 +16,7 @@ export const BlogSingle: FC<IArticlePage> = ({
             </div>
 
             <div className="container mx-auto p-8 ">
-                <h1 className="text-4xl text-center text-primary">
+                <h1 className="text-2xl lg:text-4xl text-center text-primary">
                     Read more articles
                 </h1>
                 <div className="flex flex-wrap py-20">

@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
-import { FaAnchor, FaAward, FaMoneyBill, FaPaperPlane } from 'react-icons/fa';
+import { FaAward } from 'react-icons/fa';
 import { MdOpenInNew } from 'react-icons/md';
+import { FaDotCircle } from 'react-icons/fa';
 
 const CompanyInfo = (): ReactElement => {
     return (
@@ -33,7 +34,7 @@ const CompanyInfo = (): ReactElement => {
                     </div>
                     <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                         <div className="md:pr-12">
-                            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
+                            <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 my-6  shadow-lg rounded-full bg-blueGray-200">
                                 <FaAward />
                             </div>
                             <h3 className="text-3xl font-semibold">VNTRS</h3>
@@ -53,7 +54,10 @@ const CompanyInfo = (): ReactElement => {
                                         <div>
                                             <h4 className="text-blueGray-500">
                                                 <a href="https://vntrs.com/project-svea/">
-                                                    - SVEA EKONOMI{'  '}
+                                                    <FaDotCircle className="inline-block" />
+                                                    {'  '}
+                                                    SVEA EKONOMI
+                                                    {'  '}
                                                     <MdOpenInNew className="inline-block mb-1" />
                                                 </a>
                                             </h4>
@@ -65,7 +69,9 @@ const CompanyInfo = (): ReactElement => {
                                         <div>
                                             <h4 className="text-blueGray-500">
                                                 <a href="https://vntrs.com/project-ignite-sweden/">
-                                                    - IGNITE SWEDEN{'  '}
+                                                    <FaDotCircle className="inline-block" />
+                                                    {'  '}
+                                                    IGNITE SWEDEN{'  '}
                                                     <MdOpenInNew className="inline-block mb-1" />
                                                 </a>
                                             </h4>
@@ -77,7 +83,9 @@ const CompanyInfo = (): ReactElement => {
                                         <div>
                                             <h4 className="text-blueGray-500">
                                                 <a href="https://vntrs.com/project-digital-diabetes-analytics/">
-                                                    - DIGITAL DIABETES ANALYTICS
+                                                    <FaDotCircle className="inline-block" />
+                                                    {'  '}
+                                                    DIGITAL DIABETES ANALYTICS
                                                     {'  '}
                                                     <MdOpenInNew className="inline-block mb-1" />
                                                 </a>
