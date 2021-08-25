@@ -52,7 +52,7 @@ export const ContactUs = (): ReactElement => {
                             later stages of the projects
                         </p>
                         <button
-                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            className="bg-primary text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded-none shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
                             type="button"
                             onClick={() =>
                                 window.open(
@@ -78,7 +78,7 @@ export const ContactUs = (): ReactElement => {
                             maximise the chance for success.
                         </p>
                         <button
-                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            className="bg-primary text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded-none shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
                             onClick={() =>
                                 window.open(
                                     'https://31fpxusnlyk.typeform.com/to/PaxsPfMo',
@@ -103,7 +103,7 @@ export const ContactUs = (): ReactElement => {
                             burden together.
                         </p>
                         <button
-                            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
+                            className="bg-primary text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded-none shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mt-4"
                             onClick={() =>
                                 window.open(
                                     'https://31fpxusnlyk.typeform.com/to/PaxsPfMo',
