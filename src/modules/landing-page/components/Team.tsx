@@ -92,7 +92,7 @@ export const Team = (): ReactElement => {
                                     Faizan Ejaz
                                 </h5>
                                 <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                                    Software Engineer
+                                    Senior Software Engineer
                                 </p>
                             </div>
                         </div>

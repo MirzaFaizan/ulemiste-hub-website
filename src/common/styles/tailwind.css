@@ -2,6 +2,7 @@
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*
 Document
 ========
@@ -55,8 +56,8 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-    font-family: system-ui, -apple-system,
-        /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+    font-family: 'Open Sans', sans-serif, system-ui, -apple-system,
+        /* Firefox supports this but not yet `system-ui` */ '', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
@@ -107,8 +108,8 @@ code,
 kbd,
 samp,
 pre {
-    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono',
-        Menlo, monospace; /* 1 */
+    font-family: 'Open Sans', sans-serif, ui-monospace, SFMono-Regular, Consolas,
+        'Liberation Mono', Menlo, monospace; /* 1 */
     font-size: 1em; /* 2 */
 }
 
@@ -328,10 +329,10 @@ ul {
  */
 
 html {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji'; /* 1 */
+    font-family: 'Open Sans', sans-serif, ui-sans-serif, system-ui,
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+        Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji'; /* 1 */
     line-height: 1.5; /* 2 */
 }
 
@@ -341,7 +342,10 @@ html {
  */
 
 body {
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif, ui-sans-serif, system-ui,
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+        Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
     line-height: inherit;
 }
 

@@ -32,8 +32,8 @@ const NavBar = (): ReactElement => {
                             'lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none' +
                             (navbarOpen ? ' block ' : ' hidden')
                         }
-                        id="example-navbar-warning">
-                        <ul className="flex flex-col lg:flex-row list-none mr-auto">
+                        id="navbar">
+                        <ul className="flex flex-col lg:flex-row list-none ml-auto items-center">
                             <li className="flex items-center">
                                 <span className=" lg:hover:text-blueGray-400 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
                                     <Link href="/blog">Blog/News</Link>
@@ -75,7 +75,7 @@ const NavBar = (): ReactElement => {
                                 </span>
                             </li>
                         </ul>
-                        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+                        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto items-center">
                             <li className="flex items-center">
                                 {isIndexRoute ? (
                                     <NavLink
